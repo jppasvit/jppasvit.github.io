@@ -33,8 +33,8 @@
                 </nav>
                 <footer>
                     <ul class="icons">
-                        <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-                        <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                        <li><a id="gitHubLink" onclick="hrefGithub()" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                        <li><a id="emailLink" onclick="mailtoEmail()" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
                     </ul>
                 </footer>
             </section>
@@ -159,18 +159,18 @@
                                         <table class="alt">
                                             <thead>
                                                 <tr>
+                                                    <th style="text-align: center;">Email</th>
                                                     <th style="text-align: center;">Phone number</th>
                                                     <th style="text-align: center;">Residence</th>
-                                                    <th style="text-align: center;" >Email</th>
-                                                    <th style="text-align: center;">Photo</th>
+                                                    <!-- <th style="text-align: center;">Photo</th> -->
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>*</td>
-                                                    <td>*</td>
-                                                    <td>*</td>
-                                                    <td>*</td>
+                                                    <td id="email"><a onclick="showEmail()" class="button primary small">&nbsp;Click to see&nbsp;</a></td>
+                                                    <td id="phone"><a onclick="showPhoneNumber()" class="button primary small">&nbsp;Click to see&nbsp;</a></td>
+                                                    <td id="residence"><a onclick="showResidence()" class="button primary small">&nbsp;Click to see&nbsp;</a></td>
+                                                    <!-- <td id="email"><a onclick="showEmail()" class="button primary small">&nbsp;Click to see&nbsp;</a></td> -->
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -196,6 +196,7 @@
             <script src="assets/js/breakpoints.min.js"></script>
             <script src="assets/js/util.js"></script>
             <script src="assets/js/main.js"></script>
+            <script src="assets/js/dataobfuscation.js"></script>
 
     </body>
 </html>
